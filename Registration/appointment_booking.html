@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule an Appointment</title>
+</head>
+<body>
+<h1>Schedule an Appointment</h1>
+<form id="appointmentForm">
+    <label for="doctorSelect">Select Doctor:</label>
+    <select id="doctorSelect" required>
+        <!-- Populate this dropdown dynamically with doctor names and their available time slots -->
+    </select><br><br>
+
+    <label for="timeSlotSelect">Select Time Slot:</label>
+    <select id="timeSlotSelect" required>
+        <!-- Populate this dropdown dynamically based on the selected doctor's availability -->
+    </select><br><br>
+
+    <label for="patientName">Your Name:</label>
+    <input type="text" id="patientName" required><br><br>
+
+    <label for="patientEmail">Your Email:</label>
+    <input type="email" id="patientEmail" required><br><br>
+
+    <button type="submit">Book Appointment</button>
+</form>
+
+<script src="appointment_booking.js"></script>
+</body>
+</html>
